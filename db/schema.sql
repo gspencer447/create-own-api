@@ -1,0 +1,9 @@
+DROP DATABASE IF EXISTS player_db;
+CREATE DATABASE player_db;
+USE player_db;
+CREATE TABLE players(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    team VARCHAR(255) NOT NULL,
+    position VARCHAR(255) NOT NULL
+);
